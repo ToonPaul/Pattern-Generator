@@ -4,14 +4,16 @@
 
 public class Generator{
     public static void stars(int rows){
-        int starNumber = 1;
+        String star = "*";
         while(rows > 0){
-            System.out.print("* ");
-            rows--;
+                System.out.print(star);
+                rows--;
+                System.out.println("");
+                star += "**";
+            }
+            
         }
-        System.out.println("");
-        starNumber += 2;
-    }
+    //hint: the following functions require more than one loop
     public static void triangle(int rows){
         
     }
@@ -25,6 +27,6 @@ public class Generator{
 
     }
     public static void main (String [] args){
-
+        stars(5);
     }
 }
