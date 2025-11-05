@@ -11,11 +11,18 @@ public class Generator{
                 System.out.println("");
                 star += "**";
             }
-            
         }
-    //hint: the following functions require more than one loop
+    //hint: the following functions require more than one loop - Mr. M
     public static void triangle(int rows){
-        
+        int num = 1;
+        while(rows > 0){
+                do{
+                    System.out.print(num);
+                } while(/*something*/);
+                rows--;
+                System.out.println("");
+                num += 1;
+            }
     }
     public static void odds(int start){
 
@@ -27,6 +34,7 @@ public class Generator{
 
     }
     public static void main (String [] args){
-        stars(5);
+        //stars(5);
+        triangle(5);
     }
 }
