@@ -27,19 +27,32 @@ public class Generator{
             }
     }
     public static void odds(int start){
-
-    }
+        //for loop
+        
+        for(int i = start; i > 0;i--){
+            int counts = start;
+            if(i%2 == 1){
+                do{
+                    System.out.print(i);
+                    counts--;
+                } while(counts > 0);
+            System.out.println("");
+            } 
+        }
+        }
     public static void eo (int maxE){
+        //choose any type of loop
         /*String letter = "E";
         if(maxE%2 == 0){
             letter = "o";
         }*/
     }
     public static void pyramid(int rows){
-
+        //choose any type of loop
     }
     public static void main (String [] args){
         //stars(5);
-        triangle(5);
+        //triangle(5);
+        odds(9);
     }
 }
