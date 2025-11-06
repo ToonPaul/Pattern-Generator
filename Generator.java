@@ -28,9 +28,10 @@ public class Generator{
     }
     public static void odds(int start){
         //for loop
-        
+        int counts = start;
+        int num = start;
         for(int i = start; i > 0;i--){
-            int counts = start;
+            counts = num;
             if(i%2 == 1){
                 do{
                     System.out.print(i);
@@ -38,6 +39,7 @@ public class Generator{
                 } while(counts > 0);
             System.out.println("");
             } 
+            num--;
         }
         }
     public static void eo (int maxE){
