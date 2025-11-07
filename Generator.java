@@ -64,13 +64,14 @@ public class Generator {
             System.out.println("");
             printOut += 1;
         }
-        maxE+=1;
+       printOut-=2;
+       maxE--;
         for(int i = maxE; i > 0; i--){
             storage = printOut;
             if (i % 2 == 1) {
-                letter = "O";
-            } else {
                 letter = "E";
+            } else {
+                letter = "O";
             }
             do{
                 System.out.print(letter);
@@ -83,13 +84,13 @@ public class Generator {
 
     public static void pyramid(int rows) {
         // choose any type of loop
-        rows = rows * 2 - 1;
+        //rows = rows * 2 - 1;
     }
 
     public static void main(String[] args) {
         // stars(5);
         // triangle(5);
         // odds(9);
-        eo(6);
+        eo(5);
     }
 }
